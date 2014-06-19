@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		123E7C72195219B2004DA322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E7C71195219B2004DA322 /* Foundation.framework */; };
+		123E7C74195219B2004DA322 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E7C73195219B2004DA322 /* CoreGraphics.framework */; };
+		123E7C76195219B2004DA322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E7C75195219B2004DA322 /* UIKit.framework */; };
+		123E7C7C195219B2004DA322 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 123E7C7A195219B2004DA322 /* InfoPlist.strings */; };
+		123E7C7E195219B2004DA322 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E7C7D195219B2004DA322 /* main.m */; };
+		123E7C82195219B2004DA322 /* VDEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E7C81195219B2004DA322 /* VDEAppDelegate.m */; };
+		123E7C85195219B2004DA322 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123E7C83195219B2004DA322 /* Main_iPhone.storyboard */; };
+		123E7C88195219B2004DA322 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123E7C86195219B2004DA322 /* Main_iPad.storyboard */; };
+		123E7C8B195219B2004DA322 /* VDEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E7C8A195219B2004DA322 /* VDEViewController.m */; };
+		123E7C8D195219B2004DA322 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123E7C8C195219B2004DA322 /* Images.xcassets */; };
+		123E7C94195219B2004DA322 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E7C93195219B2004DA322 /* XCTest.framework */; };
+		123E7C95195219B2004DA322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E7C71195219B2004DA322 /* Foundation.framework */; };
+		123E7C96195219B2004DA322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E7C75195219B2004DA322 /* UIKit.framework */; };
+		123E7C9E195219B2004DA322 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 123E7C9C195219B2004DA322 /* InfoPlist.strings */; };
+		123E7CA0195219B2004DA322 /* VDEBilleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E7C9F195219B2004DA322 /* VDEBilleTests.m */; };
+		123E7CBC19522AC8004DA322 /* VDEViewController+configureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E7CBB19522AC8004DA322 /* VDEViewController+configureView.m */; };
+		123E7CC019523A14004DA322 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E7CBF19523A14004DA322 /* CoreMotion.framework */; };
+		123E7CC319523A36004DA322 /* VDEViewController+coreMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E7CC219523A36004DA322 /* VDEViewController+coreMotion.m */; };
+		123E7CCB19536167004DA322 /* bing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 123E7CC919536167004DA322 /* bing.mp3 */; };
+		123E7CCC19536167004DA322 /* ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 123E7CCA19536167004DA322 /* ocean.mp3 */; };
+		123E7CCF19536ED3004DA322 /* VDEViewController+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 123E7CCE19536ED3004DA322 /* VDEViewController+Shake.m */; };
+		123E7CD61953769D004DA322 /* squeeze-toy-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 123E7CD11953769D004DA322 /* squeeze-toy-1.mp3 */; };
+		123E7CD71953769D004DA322 /* squeeze-toy-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 123E7CD21953769D004DA322 /* squeeze-toy-2.mp3 */; };
+		123E7CD81953769D004DA322 /* squeeze-toy-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 123E7CD31953769D004DA322 /* squeeze-toy-3.mp3 */; };
+		123E7CD91953769D004DA322 /* squeeze-toy-4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 123E7CD41953769D004DA322 /* squeeze-toy-4.mp3 */; };
+		123E7CDA1953769D004DA322 /* squeeze-toy-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 123E7CD51953769D004DA322 /* squeeze-toy-5.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		123E7C97195219B2004DA322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 123E7C66195219B2004DA322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 123E7C6D195219B2004DA322;
+			remoteInfo = VDEBille;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		123E7C6E195219B2004DA322 /* VDEBille.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VDEBille.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		123E7C71195219B2004DA322 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		123E7C73195219B2004DA322 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		123E7C75195219B2004DA322 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		123E7C79195219B2004DA322 /* VDEBille-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VDEBille-Info.plist"; sourceTree = "<group>"; };
+		123E7C7B195219B2004DA322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		123E7C7D195219B2004DA322 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		123E7C7F195219B2004DA322 /* VDEBille-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VDEBille-Prefix.pch"; sourceTree = "<group>"; };
+		123E7C80195219B2004DA322 /* VDEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDEAppDelegate.h; sourceTree = "<group>"; };
+		123E7C81195219B2004DA322 /* VDEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDEAppDelegate.m; sourceTree = "<group>"; };
+		123E7C84195219B2004DA322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		123E7C87195219B2004DA322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		123E7C89195219B2004DA322 /* VDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VDEViewController.h; sourceTree = "<group>"; };
+		123E7C8A195219B2004DA322 /* VDEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDEViewController.m; sourceTree = "<group>"; };
+		123E7C8C195219B2004DA322 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		123E7C92195219B2004DA322 /* VDEBilleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDEBilleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		123E7C93195219B2004DA322 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		123E7C9B195219B2004DA322 /* VDEBilleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VDEBilleTests-Info.plist"; sourceTree = "<group>"; };
+		123E7C9D195219B2004DA322 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		123E7C9F195219B2004DA322 /* VDEBilleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDEBilleTests.m; sourceTree = "<group>"; };
+		123E7CBA19522AC8004DA322 /* VDEViewController+configureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDEViewController+configureView.h"; sourceTree = "<group>"; };
+		123E7CBB19522AC8004DA322 /* VDEViewController+configureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDEViewController+configureView.m"; sourceTree = "<group>"; };
+		123E7CBF19523A14004DA322 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		123E7CC119523A36004DA322 /* VDEViewController+coreMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDEViewController+coreMotion.h"; sourceTree = "<group>"; };
+		123E7CC219523A36004DA322 /* VDEViewController+coreMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDEViewController+coreMotion.m"; sourceTree = "<group>"; };
+		123E7CC919536167004DA322 /* bing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bing.mp3; path = Sounds/bing.mp3; sourceTree = "<group>"; };
+		123E7CCA19536167004DA322 /* ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ocean.mp3; path = Sounds/ocean.mp3; sourceTree = "<group>"; };
+		123E7CCD19536ED3004DA322 /* VDEViewController+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VDEViewController+Shake.h"; sourceTree = "<group>"; };
+		123E7CCE19536ED3004DA322 /* VDEViewController+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VDEViewController+Shake.m"; sourceTree = "<group>"; };
+		123E7CD11953769D004DA322 /* squeeze-toy-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "squeeze-toy-1.mp3"; path = "Sounds/squeeze-toy-1.mp3"; sourceTree = "<group>"; };
+		123E7CD21953769D004DA322 /* squeeze-toy-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "squeeze-toy-2.mp3"; path = "Sounds/squeeze-toy-2.mp3"; sourceTree = "<group>"; };
+		123E7CD31953769D004DA322 /* squeeze-toy-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "squeeze-toy-3.mp3"; path = "Sounds/squeeze-toy-3.mp3"; sourceTree = "<group>"; };
+		123E7CD41953769D004DA322 /* squeeze-toy-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "squeeze-toy-4.mp3"; path = "Sounds/squeeze-toy-4.mp3"; sourceTree = "<group>"; };
+		123E7CD51953769D004DA322 /* squeeze-toy-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "squeeze-toy-5.mp3"; path = "Sounds/squeeze-toy-5.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		123E7C6B195219B2004DA322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123E7CC019523A14004DA322 /* CoreMotion.framework in Frameworks */,
+				123E7C74195219B2004DA322 /* CoreGraphics.framework in Frameworks */,
+				123E7C76195219B2004DA322 /* UIKit.framework in Frameworks */,
+				123E7C72195219B2004DA322 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		123E7C8F195219B2004DA322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123E7C94195219B2004DA322 /* XCTest.framework in Frameworks */,
+				123E7C96195219B2004DA322 /* UIKit.framework in Frameworks */,
+				123E7C95195219B2004DA322 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		123E7C65195219B2004DA322 = {
+			isa = PBXGroup;
+			children = (
+				123E7C77195219B2004DA322 /* VDEBille */,
+				123E7C99195219B2004DA322 /* VDEBilleTests */,
+				123E7C70195219B2004DA322 /* Frameworks */,
+				123E7C6F195219B2004DA322 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		123E7C6F195219B2004DA322 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				123E7C6E195219B2004DA322 /* VDEBille.app */,
+				123E7C92195219B2004DA322 /* VDEBilleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		123E7C70195219B2004DA322 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				123E7CBF19523A14004DA322 /* CoreMotion.framework */,
+				123E7C71195219B2004DA322 /* Foundation.framework */,
+				123E7C73195219B2004DA322 /* CoreGraphics.framework */,
+				123E7C75195219B2004DA322 /* UIKit.framework */,
+				123E7C93195219B2004DA322 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		123E7C77195219B2004DA322 /* VDEBille */ = {
+			isa = PBXGroup;
+			children = (
+				123E7C80195219B2004DA322 /* VDEAppDelegate.h */,
+				123E7C81195219B2004DA322 /* VDEAppDelegate.m */,
+				123E7C83195219B2004DA322 /* Main_iPhone.storyboard */,
+				123E7C86195219B2004DA322 /* Main_iPad.storyboard */,
+				123E7C89195219B2004DA322 /* VDEViewController.h */,
+				123E7C8A195219B2004DA322 /* VDEViewController.m */,
+				123E7CD019536EDD004DA322 /* Categories */,
+				123E7C8C195219B2004DA322 /* Images.xcassets */,
+				123E7CC419536141004DA322 /* Sounds */,
+				123E7CB6195222B7004DA322 /* Images */,
+				123E7C78195219B2004DA322 /* Supporting Files */,
+			);
+			path = VDEBille;
+			sourceTree = "<group>";
+		};
+		123E7C78195219B2004DA322 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				123E7C79195219B2004DA322 /* VDEBille-Info.plist */,
+				123E7C7A195219B2004DA322 /* InfoPlist.strings */,
+				123E7C7D195219B2004DA322 /* main.m */,
+				123E7C7F195219B2004DA322 /* VDEBille-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		123E7C99195219B2004DA322 /* VDEBilleTests */ = {
+			isa = PBXGroup;
+			children = (
+				123E7C9F195219B2004DA322 /* VDEBilleTests.m */,
+				123E7C9A195219B2004DA322 /* Supporting Files */,
+			);
+			path = VDEBilleTests;
+			sourceTree = "<group>";
+		};
+		123E7C9A195219B2004DA322 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				123E7C9B195219B2004DA322 /* VDEBilleTests-Info.plist */,
+				123E7C9C195219B2004DA322 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		123E7CB6195222B7004DA322 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		123E7CC419536141004DA322 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				123E7CD11953769D004DA322 /* squeeze-toy-1.mp3 */,
+				123E7CD21953769D004DA322 /* squeeze-toy-2.mp3 */,
+				123E7CD31953769D004DA322 /* squeeze-toy-3.mp3 */,
+				123E7CD41953769D004DA322 /* squeeze-toy-4.mp3 */,
+				123E7CD51953769D004DA322 /* squeeze-toy-5.mp3 */,
+				123E7CC919536167004DA322 /* bing.mp3 */,
+				123E7CCA19536167004DA322 /* ocean.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		123E7CD019536EDD004DA322 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				123E7CCD19536ED3004DA322 /* VDEViewController+Shake.h */,
+				123E7CCE19536ED3004DA322 /* VDEViewController+Shake.m */,
+				123E7CC119523A36004DA322 /* VDEViewController+coreMotion.h */,
+				123E7CC219523A36004DA322 /* VDEViewController+coreMotion.m */,
+				123E7CBA19522AC8004DA322 /* VDEViewController+configureView.h */,
+				123E7CBB19522AC8004DA322 /* VDEViewController+configureView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		123E7C6D195219B2004DA322 /* VDEBille */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 123E7CA3195219B2004DA322 /* Build configuration list for PBXNativeTarget "VDEBille" */;
+			buildPhases = (
+				123E7C6A195219B2004DA322 /* Sources */,
+				123E7C6B195219B2004DA322 /* Frameworks */,
+				123E7C6C195219B2004DA322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VDEBille;
+			productName = VDEBille;
+			productReference = 123E7C6E195219B2004DA322 /* VDEBille.app */;
+			productType = "com.apple.product-type.application";
+		};
+		123E7C91195219B2004DA322 /* VDEBilleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 123E7CA6195219B2004DA322 /* Build configuration list for PBXNativeTarget "VDEBilleTests" */;
+			buildPhases = (
+				123E7C8E195219B2004DA322 /* Sources */,
+				123E7C8F195219B2004DA322 /* Frameworks */,
+				123E7C90195219B2004DA322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				123E7C98195219B2004DA322 /* PBXTargetDependency */,
+			);
+			name = VDEBilleTests;
+			productName = VDEBilleTests;
+			productReference = 123E7C92195219B2004DA322 /* VDEBilleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		123E7C66195219B2004DA322 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VDE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Utilisation;
+				TargetAttributes = {
+					123E7C91195219B2004DA322 = {
+						TestTargetID = 123E7C6D195219B2004DA322;
+					};
+				};
+			};
+			buildConfigurationList = 123E7C69195219B2004DA322 /* Build configuration list for PBXProject "VDEBille" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 123E7C65195219B2004DA322;
+			productRefGroup = 123E7C6F195219B2004DA322 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				123E7C6D195219B2004DA322 /* VDEBille */,
+				123E7C91195219B2004DA322 /* VDEBilleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		123E7C6C195219B2004DA322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123E7C88195219B2004DA322 /* Main_iPad.storyboard in Resources */,
+				123E7CD81953769D004DA322 /* squeeze-toy-3.mp3 in Resources */,
+				123E7CD71953769D004DA322 /* squeeze-toy-2.mp3 in Resources */,
+				123E7CCC19536167004DA322 /* ocean.mp3 in Resources */,
+				123E7CCB19536167004DA322 /* bing.mp3 in Resources */,
+				123E7CD61953769D004DA322 /* squeeze-toy-1.mp3 in Resources */,
+				123E7C8D195219B2004DA322 /* Images.xcassets in Resources */,
+				123E7CD91953769D004DA322 /* squeeze-toy-4.mp3 in Resources */,
+				123E7C85195219B2004DA322 /* Main_iPhone.storyboard in Resources */,
+				123E7C7C195219B2004DA322 /* InfoPlist.strings in Resources */,
+				123E7CDA1953769D004DA322 /* squeeze-toy-5.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		123E7C90195219B2004DA322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123E7C9E195219B2004DA322 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		123E7C6A195219B2004DA322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123E7CBC19522AC8004DA322 /* VDEViewController+configureView.m in Sources */,
+				123E7CCF19536ED3004DA322 /* VDEViewController+Shake.m in Sources */,
+				123E7C82195219B2004DA322 /* VDEAppDelegate.m in Sources */,
+				123E7C7E195219B2004DA322 /* main.m in Sources */,
+				123E7CC319523A36004DA322 /* VDEViewController+coreMotion.m in Sources */,
+				123E7C8B195219B2004DA322 /* VDEViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		123E7C8E195219B2004DA322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123E7CA0195219B2004DA322 /* VDEBilleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		123E7C98195219B2004DA322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 123E7C6D195219B2004DA322 /* VDEBille */;
+			targetProxy = 123E7C97195219B2004DA322 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		123E7C7A195219B2004DA322 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				123E7C7B195219B2004DA322 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		123E7C83195219B2004DA322 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				123E7C84195219B2004DA322 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		123E7C86195219B2004DA322 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				123E7C87195219B2004DA322 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		123E7C9C195219B2004DA322 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				123E7C9D195219B2004DA322 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		123E7CA1195219B2004DA322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		123E7CA2195219B2004DA322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		123E7CA4195219B2004DA322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEBille/VDEBille-Prefix.pch";
+				INFOPLIST_FILE = "VDEBille/VDEBille-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		123E7CA5195219B2004DA322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEBille/VDEBille-Prefix.pch";
+				INFOPLIST_FILE = "VDEBille/VDEBille-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		123E7CA7195219B2004DA322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VDEBille.app/VDEBille";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEBille/VDEBille-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VDEBilleTests/VDEBilleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		123E7CA8195219B2004DA322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VDEBille.app/VDEBille";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VDEBille/VDEBille-Prefix.pch";
+				INFOPLIST_FILE = "VDEBilleTests/VDEBilleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		123E7C69195219B2004DA322 /* Build configuration list for PBXProject "VDEBille" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				123E7CA1195219B2004DA322 /* Debug */,
+				123E7CA2195219B2004DA322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		123E7CA3195219B2004DA322 /* Build configuration list for PBXNativeTarget "VDEBille" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				123E7CA4195219B2004DA322 /* Debug */,
+				123E7CA5195219B2004DA322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		123E7CA6195219B2004DA322 /* Build configuration list for PBXNativeTarget "VDEBilleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				123E7CA7195219B2004DA322 /* Debug */,
+				123E7CA8195219B2004DA322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 123E7C66195219B2004DA322 /* Project object */;
+}
